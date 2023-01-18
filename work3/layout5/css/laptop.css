@@ -1,0 +1,153 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+h4{
+   text-align: left;
+
+}
+/* navber start  */
+.logo{
+    text-align: left;
+    width: 150px;
+    height: 100px;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 60px;
+}
+.nav-menu{
+    padding-top: 50px;
+}
+.nav-menu li{
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.nav-menu li{
+    display: inline;
+    background-color: transparent;
+    padding: 5px 15px;
+    margin: 20px 0px;
+}
+.nav-menu li:hover{
+    background-color: black;
+    border-radius: 0px;
+    border-bottom: 5px solid #f9004d;
+    cursor: pointer;
+}
+.nav-menu li a{
+    font-size: 1rem;
+    
+  }
+  
+
+/* navber Ends  */
+/* Profile Start  */
+.profile .img-top-right{
+    position: absolute;
+    width: 100px;
+    transition: transform 2s, width 2s;
+}
+.profile .img-top-right:hover{
+   width: 120px;
+}
+.profile .img-bottom-left{
+    position: absolute;
+    transition: transform 2s, width 2s;
+}
+.profile .img-bottom-left:hover{
+    width: 120px;
+}
+
+.profile .disk p{
+    width: 50%;
+
+}
+/* Profile Ends  */
+/* About Me Start  */
+.aboutme-dice{
+    padding: 0px 10px 0px 60px; 
+}
+.about-img{
+    padding: 50px 20px 0px 0px;
+    
+}
+.about-img img{
+    border: none;
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+}
+.aboutme-dice p{
+    text-align: left;
+}
+
+/* About Me Ends  */
+/* Profetional  Experiance Start  */
+.profetional{
+    padding: 1% 5%;
+    align-items: center;
+}
+.work-experiance .card{
+    background-color: #191919;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    height: 500px;
+    margin-bottom: 40px
+}
+.education .card{
+    background-color: #191919;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    height: 500px;
+    margin-bottom: 40px
+
+}
+.skill .card{
+    background-color:#191919;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    height: 500px;
+    margin-bottom: 40px
+
+}
+/* Profetional  Experiance Ends  */
+/* Contact me Start  */
+.contact-f{
+    display: flex;
+}
+.form{
+    text-align: center;
+}
+.con h3{
+    font-size: 1.5rem;
+}
+.con{
+    position: relative;
+}
+.con-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* Contact me Ends  */

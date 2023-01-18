@@ -1,0 +1,1226 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: black;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.dotted-hr {
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+/* Start Navber  */
+.nav-header {
+    position: sticky;
+    top: 0%;
+    background-color: #222327;
+    height: 13vh;
+    color: white;
+    z-index: 1;
+    box-shadow: 0 0 5px 0px white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo {
+    color: red;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+span {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0px;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    color: #29fd53;
+}
+
+.navbar a.active {
+    color: #29fd53;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: none;
+    background-color: transparent;
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #29fd53;
+}
+
+.dropdown-content {
+    display: none;
+    top: 66px;
+    position: absolute;
+    background-color: #29fd53;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    margin-left: 5px;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: .5s;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    color: white;
+    transform: translateY(8px);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ends Navber  */
+
+/* Start Profile  */
+h1 {
+    color: black;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+h3 {
+    color: black;
+    font-size: 1.7rem;
+}
+
+h4 {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.profile {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/img.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 2% 4%;
+    transition: all .50s ease;
+
+}
+
+.content {
+    margin: 12% 0% 0% 5%;
+    padding: 10px 20px;
+    transition: all .50s ease;
+}
+
+.content .title {
+    font-size: 1.9rem;
+    color: darkblue;
+}
+
+/* Ends Profile  */
+
+.about {
+    width: 100%;
+    padding: 3% 4%;
+    background-color: #191919;
+    transition: all .5s ease;
+}
+
+.main {
+    display: flex;
+    transition: all .5s ease;
+}
+
+.about h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.img-about {
+    width: 50%;
+}
+
+.img-about img {
+    height: auto;
+    width: 450px;
+    margin: 50px auto;
+    border-radius: 5%;
+}
+
+.about-text {
+    margin: 100px 0px;
+    width: 50%;
+    text-align: right;
+}
+
+.about-text h5 {
+    color: white;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+.about-text span {
+    color: red;
+    font-size: 1.9rem;
+}
+
+.about-text p {
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+
+}
+
+/* End about section  */
+
+/* Start Photo Section  */
+
+.photo-section {
+    width: 100%;
+    height: auto;
+    padding: 3% 5%;
+    background-color: black;
+    transition: all .5s ease;
+}
+
+.photo-section h2 {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+
+}
+
+.card-section img {
+    width: 30%;
+    margin-top: 50px;
+    height: 30%;
+    object-fit: cover;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+}
+
+.card-section {
+    margin: 20px auto;
+    max-width: 600px;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.card-section:hover img {
+    opacity: 0.3;
+}
+
+.card-section img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+
+/* Ends photo Section  */
+
+/* Start Story Section  */
+
+.story-section {
+    width: 100%;
+    height: auto;
+    padding: 3% 5%;
+    background-color: #191919;
+    transition: all .5s ease;
+}
+
+.story-section h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.row .card {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #3f3f3f;
+}
+
+.row .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20PX solid transparent;
+    border-top: 20px solid #17e78c;
+    border-right: 20px solid #17e78c;
+
+}
+
+.row .card.active::before {
+    border-top: 20px solid #ff3b7e;
+    border-right: 20px solid #ff3b7e;
+}
+
+.row .card .content {
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+
+.row .card.active .content {
+    height: auto;
+
+}
+
+.row .card.active .content::before {
+
+    display: none;
+}
+
+.row .card .content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: linear-gradient(transparent, #3f3f3f);
+}
+
+.row .card .content h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.row .card .content p {
+
+    font-weight: 300;
+    color: #ccc;
+
+}
+
+.row .card .more {
+    position: relative;
+    padding: 10px 15px;
+    background-color: #17e78c;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #383838;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.row .card.active .more {
+    background-color: #ff3b7e;
+    color: #fff;
+}
+
+.row .card .more::before {
+    content: 'Read More';
+}
+
+.row .card.active .more::before {
+    content: 'Read Less';
+}
+
+/* Start Short Story  */
+.short-story {
+    width: 100%;
+    height: auto;
+    padding: 3% 5%;
+    background-color: black;
+    transition: all .5s ease;
+}
+
+.short-story h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Ends Short Story  */
+.onu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.onu .card-2 {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #3f3f3f;
+}
+
+.onu .card-2 .content-2 h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.onu .card-2 .content-2 p {
+    font-weight: 300;
+    color: #ccc;
+}
+
+.onu .card-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20PX solid transparent;
+    border-top: 20px solid green;
+    border-right: 20px solid green;
+
+}
+
+.onu .card-2.active::before {
+    border-top: 20px solid red;
+    border-right: 20px solid red;
+}
+
+.onu .card-2 .content-2 {
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+
+.onu .card-2.active .content-2 {
+    height: auto;
+
+}
+
+.onu .card-2.active .content-2::before {
+
+    display: none;
+}
+
+.onu .card-2 .content-2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: linear-gradient(transparent, #3f3f3f);
+}
+
+.onu .card-2 .more {
+    position: relative;
+    padding: 10px 15px;
+    background-color: green;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.onu .card-2.active .more {
+    background-color: red;
+    color: #fff;
+}
+
+.onu .card-2 .more::before {
+    content: 'Read More';
+}
+
+.onu .card-2.active .more::before {
+    content: 'Read Less';
+}
+
+/* Ends Story Section  */
+
+/* Start Story last  */
+.story-section-2 {
+    width: 100%;
+    height: auto;
+    padding: 3% 5%;
+    background-color: #191919;
+    transition: all .5s ease;
+
+}
+
+.story-section-2 h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.golpo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.golpo .card-3 {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #3f3f3f;
+}
+
+.golpo .card-3 .content-3 h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.golpo .card-3 .content-3 p {
+    font-weight: 300;
+    color: #ccc;
+}
+
+.golpo .card-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20PX solid transparent;
+    border-top: 20px solid #00ffc8;
+    border-right: 20px solid #00ffc8;
+
+}
+
+.golpo .card-3.active::before {
+    border-top: 20px solid #f700ff;
+    border-right: 20px solid #f700ff;
+}
+
+.golpo .card-3 .content-3 {
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+
+.golpo .card-3.active .content-3 {
+    height: auto;
+
+}
+
+.golpo .card-3.active .content-3::before {
+
+    display: none;
+}
+
+.golpo .card-3 .content-3::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: linear-gradient(transparent, #3f3f3f);
+}
+
+.golpo .card-3 .more {
+    position: relative;
+    padding: 10px 15px;
+    background-color: #00ffc8;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.golpo .card-3.active .more {
+    background-color: #f700ff;
+    color: #fff;
+}
+
+.golpo .card-3 .more::before {
+    content: 'Read More';
+
+}
+
+.golpo .card-3.active .more::before {
+    content: 'Read Less';
+}
+
+/* Ends Story  */
+
+/* Start Contact Section  */
+
+.contact {
+    width: 100%;
+    padding: 1% 3%;
+    background-color: black;
+}
+
+.contact h2 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.row-from {
+    display: flex;
+}
+
+.about-contact-me {
+    width: 33.33%;
+    padding: 10px;
+}
+
+.about-contact-me h3 {
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.about-contact-me p {
+    color: white;
+    text-align: left;
+}
+
+.contact-from {
+    width: 33.33%;
+    display: block;
+    padding: 10px;
+}
+
+.contact-from input {
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+    text-align: left;
+}
+
+.contact-from textarea {
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    height: 100px;
+
+}
+
+.contact-from .btn-sub {
+    background-color: #ff0059;
+    color: white;
+    border: none;
+    margin-right: 70px;
+}
+
+.contact-from .btn-sub:hover {
+
+    background-color: transparent;
+    border: 1px solid #ff0059;
+    color: white;
+}
+
+.contact-from .btn-reset {
+    background-color: #ff0059;
+    color: white;
+    border: none;
+    transition: .5s;
+}
+
+.contact-from .btn-reset:hover {
+
+    background-color: transparent;
+    border: 1px solid #ff0059;
+    color: white;
+}
+
+.contact-icon {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.contact-icon h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon ul {
+    margin-left: 50px;
+}
+
+.contact-icon li {
+    background-color: transparent;
+    border-radius: 40%;
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 10px;
+    transition: .5s;
+}
+
+.contact-icon li:hover {
+    background-color: white;
+
+}
+
+.contact-icon a {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Ends Contact Section  */
+/* Start Footer section  */
+footer {
+    height: 150px;
+    background-color: #191919;
+    text-align: center;
+}
+
+footer h3 {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer h5 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: .7rem;
+}
+
+/* Ends Footer Section  */
+
+/* For Tablat  */
+
+
+
+
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar {
+        padding: 5px 0px;
+        margin: 0px 20px;
+    }
+
+    .dropdown-content {
+        top: 55px;
+    }
+
+    /* Start Profile  */
+
+    .profile {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../image/img.JPG);
+        background-size: cover;
+        background-position: center;
+        padding: 1% 3%;
+        transition: all .50s ease;
+
+    }
+
+    h1 {
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    h3 {
+        color: black;
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        color: black;
+        font-size: 1.3rem;
+    }
+
+    .content {
+        margin: 20% 0% 0% 5%;
+        padding: 10px 20px;
+        transition: all .50s ease;
+    }
+
+    .content .title {
+        font-size: 1.8rem;
+        color: darkblue;
+    }
+
+
+    .about {
+        width: 100%;
+        padding: 3% 4%;
+        background-color: #191919;
+        transition: all .5s ease;
+    }
+
+    .main {
+        display: flex;
+        transition: all .8s ease;
+    }
+
+    .about h2 {
+        text-align: center;
+        color: white;
+        font-size: 2.3rem;
+    }
+
+    .img-about {
+        width: 50%;
+    }
+
+    .img-about img {
+        height: auto;
+        width: 400px;
+        margin: 50px auto;
+        border-radius: 5%;
+    }
+
+    .about-text {
+        margin: 50px 0px;
+        width: 50%;
+        text-align: right;
+    }
+
+    .about-text h5 {
+        color: white;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+
+    .about-text span {
+        color: red;
+        font-size: 1.7rem;
+    }
+
+    .about-text p {
+        color: white;
+        text-align: left;
+        font-size: 1.1rem;
+
+    }
+
+    /* End about section  */
+    /* Start photo Section  */
+    .card-section img {
+        width: auto 30%;
+        margin-top: 50px;
+        height: 30%;
+        transition: all .5s ease;
+    }
+
+    .card-section {
+        display: flex;
+        transition: all .5s ease;
+    }
+
+    /* Ends photo Section  */
+    /* Start Story Section  */
+    .row {
+
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    .onu {
+
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    .golpo {
+
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    /* Ends Story Section  */
+    /* Start Contect me  */
+
+    .row-from {
+        display: block;
+        transition: all .5s ease;
+    }
+
+    .about-contact-me {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-contact-me h3 {
+        text-align: center;
+    }
+
+    .about-contact-me p {
+        text-align: center;
+    }
+
+    .contact-from {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-icon {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-icon ul {
+        margin: 10px auto;
+    }
+
+    /* Ends Contct me  */
+}
+
+/* Ends Profile  */
+
+
+/* For Monile  */
+
+
+
+
+@media (max-width: 992px) {
+    #menu-icon {
+        display: block;
+    }
+
+    /* Start navber section  */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 40vh;
+        background-color: #29fd53;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s case;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0px;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: white;
+        transform: translateY(8px);
+    }
+
+    .navbar a.active {
+        color: white;
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+
+    /* Dropdown button */
+    .dropdown-content {
+        top: 80%;
+        right: 90%;
+
+    }
+
+    /* Links inside the dropdown */
+    /* Ends Navber  */
+
+    /* Start Profile  */
+    h1 {
+        color: black;
+        font-size: 2.3rem;
+        font-weight: 800;
+    }
+
+    h3 {
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        color: black;
+        font-size: 1rem;
+    }
+
+    .profile {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../image/img.JPG);
+        background-size: cover;
+        background-position: center;
+        padding: 1% 2%;
+        transition: all .50s ease;
+
+    }
+
+    .content {
+        margin: 30% 0% 0% 5%;
+        padding: 10px 20px;
+        transition: all .50s ease;
+    }
+
+    .content .title {
+        font-size: 1.7rem;
+        color: darkblue;
+    }
+
+    /* Ends Profile  */
+    /* Start about section  */
+    .about {
+        width: 100%;
+        padding: 3% 4%;
+        background-color: #191919;
+        transition: all .5s ease;
+    }
+
+    .main {
+        display: inline;
+    }
+
+    .about h2 {
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    .img-about {
+        text-align: center;
+        width: 100%;
+    }
+
+    .img-about img {
+        height: auto;
+        width: 200px;
+        margin: 50px auto;
+        border-radius: 50%;
+    }
+
+    .about-text {
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .about-text h5 {
+        color: white;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+    }
+
+    .about-text span {
+        color: red;
+        font-size: 1.7rem;
+    }
+
+    .about-text p {
+        color: white;
+        text-align: left;
+
+    }
+
+    .about-text button {
+        text-align: left;
+    }
+
+
+    /* End about section  */
+    /* Start photo Section  */
+    .card-section img {
+        width: 30%;
+        margin-top: 50px;
+        height: 30%;
+        transition: all .5s ease;
+    }
+
+    .card-section {
+        display: inline-block;
+        transition: all .5s ease;
+    }
+
+    /* Ends photo Section  */
+    /* Start Story Section  */
+
+    .row {
+
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    .onu {
+
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    .golpo {
+
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    /* Ends Story Section  */
+    /* Start Contect me  */
+
+    .row-from {
+        display: block;
+        transition: all .5s ease;
+    }
+
+    .about-contact-me {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-contact-me h3 {
+        text-align: center;
+    }
+
+    .about-contact-me p {
+        text-align: center;
+    }
+
+    .contact-from {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-icon {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-icon ul {
+        margin: 10px auto;
+    }
+
+    /* Ends Contct me  */
+}

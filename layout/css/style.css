@@ -1,0 +1,145 @@
+/* Glovel section  */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* End glovel section  */
+
+/* Start header section  */
+.style {
+    border: 10px solid white;
+}
+
+.containar {
+    background-color: #e7e9eb;
+    margin: 30px;
+    height: 650px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.containar h4 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.header-ditail {
+    border-top: 7px solid white;
+    border-right: 15px solid white;
+    border-bottom: 7px solid white;
+    border-left: 15px solid white;
+    border-radius: 5px;
+}
+
+.header {
+    background: #666;
+    height: 100px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.header h1 {
+    padding-top: 15px;
+    font-size: 50px;
+    color: white;
+}
+
+/* End header section */
+
+/* Start city section  */
+.city {
+    width: 25%;
+    height: 300px;
+    float: left;
+    padding: 25px;
+    background: #ccc;
+}
+
+.city li {
+    list-style-type: none;
+    text-transform: capitalize;
+    padding: 3px;
+
+}
+
+.city li a {
+    text-decoration: none;
+    padding: 5px;
+}
+/* End city section  */
+/* Start city details section  */
+.city-detail {
+    float: right;
+    width: 75%;
+    background: #f1f1f1;
+    color: black;
+    height: 300px;
+}
+
+.city-detail h2 {
+    font-size: 35px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.pra {
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.city-detail p {
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+/* End city details section  */
+
+/* start footer section  */
+.footer {
+    background: #666;
+    color: white;
+    padding: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+
+/* End footer section  */
+
+/* start button section  */
+.button {
+    background: #0ac00a;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.button:hover {
+    background: #022c02;
+}
+
+/* End button section  */

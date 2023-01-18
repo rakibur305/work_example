@@ -1,0 +1,446 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* Global Section  */
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 20px 0px;
+    text-transform: capitalize;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-family: 'Island Moments', cursive;
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+span{
+    color: #f9004d;
+    font-size: 2rem;
+}
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+/* For Tablet  */
+[class*="col-s-"]{
+   float: left;
+}
+/* For mobile  */
+[class*="col-"]{
+    width: 100%;
+}
+/* Global Ends \ */
+
+/* Navber Start  */
+.navber{
+    background: #191919;
+    text-align: center;
+}
+.logo img{
+    width: 150px;
+    height: 100px;
+}
+.heading h1{
+    color: white;
+
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu li{
+    list-style-type: none;
+}
+.nav-menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+label .logo{
+    font-size: 32px;
+    padding-left: 60px;
+}
+.nav-menu li{
+    background-color: #191919;
+    text-decoration: none;
+    border: 5px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 3px;
+    transition: .4s;
+    
+}
+.nav-menu li:hover{
+    background-color: black;
+    border-bottom: 5px solid #f9004d;
+    cursor: pointer;
+}
+.navber::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* navber ends  */
+/* Profile starts  */
+
+.profile{
+    padding: 100px 60px;
+    text-align: center;
+    position: relative;
+}
+.profile img{
+    width: 100px;
+    height: auto;
+}
+.profile .img-top-right{
+    position: absolute;
+    top: 0px;
+    right: 3%;
+    transition: transform 2s;
+}
+.profile .img-top-right:hover{
+    transform: rotate(360deg);
+}
+.profile .img-bottom-left{
+
+    position: absolute;
+    bottom: 0px;
+    left: 3%;
+    transition: transform 2s;
+}
+.profile .img-bottom-left:hover{
+    transform: rotate(360deg);
+}
+.profile .disk p{
+    color: gray;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    width: 80%;
+
+}
+/* About Me Start  */
+
+.about{
+    background-color: #191919;
+    padding: 3% 1%;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.about-img img{
+   border: 5px solid white;
+   border-radius: 50%;
+   height: 220px;
+   width: 200px;
+}
+.about p{
+    text-align: center;
+}
+.cv-button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.cv-button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.about::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* About me Ends  */
+
+/* Profetional  Experiance Start  */
+.profetional{
+    padding: 1% 2%;
+    background-color: black;
+
+}
+.work-heding h3{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.work-experiance .card{
+    background-color: #191919;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    height: 500px;
+    margin-bottom: 40px
+}
+.work-experiance .card:hover{
+    box-shadow: 0px 5px 5px 5px #f9004d;
+}
+.icon{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.card-title h3{
+    background-color: #b30039;
+    color: white;
+    font-size: 1.6rem;
+}
+.card-dace{
+    padding: 20px;
+    text-align: left;
+}
+.card-dace ol li{
+    padding-bottom: 20px;
+
+}
+.education .card{
+    background-color: #191919;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    height: 500px;
+    margin-bottom: 40px
+
+}
+.education .card:hover{
+    box-shadow: 0px 5px 5px 5px white;
+}
+.skill .card{
+    background-color: #191919;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    height: 500px;
+    margin-bottom: 40px
+
+}
+.skill .card:hover{
+    box-shadow: 0px 5px 5px 5px #f9004d;
+}
+.skill{
+    padding-left: 20px;
+}
+.skill li{
+    list-style-type: none;
+    font-weight: bold;
+    margin: 30px 10px;
+    text-transform: capitalize;
+    position: relative;
+}
+.skill li::before{
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  top: calc(100% + 5px);
+  border-radius: 1000px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+}
+.skill li::after{
+    content: '';
+    position: absolute;
+    background-color: #f9004d;
+    top: calc(100% + 5px);
+    border-radius: 1000px;
+    left: 0px;
+    width: 0%;
+    height: 10px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count:initial;
+  }
+  .skill li.html::after{
+    animation-name: html;
+  }
+  @keyframes html{
+    to{
+        width: 90%;
+    }
+    
+  }
+
+  .skill li.css::after{
+    animation-name: css;
+  }
+  @keyframes css{
+    to{
+        width: 80%;
+    }
+    
+  }
+
+  .skill li.javascript::after{
+    animation-name: javascript;
+  }
+  @keyframes javascript{
+    to{
+        width: 70%;
+    }
+    
+  }
+
+  .skill li.bootstap::after{
+    animation-name: bootstap;
+  }
+  @keyframes bootstap{
+    to{
+        width: 75%;
+    }
+    
+  }
+
+  .skill li.jquary::after{
+    animation-name: jquary;
+  }
+  @keyframes jquary{
+    to{
+        width: 65%;
+    }
+    
+  }
+.profetional::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Profetional  Experiance Ends  */
+
+/* Contact me Start  */
+.contact{
+    padding: 1% 3%;
+    background-color: #191919;
+}
+.form{
+text-align: center;
+padding: 10px;
+margin: 15px;
+
+}
+.contact h3{
+    color: white;
+}
+.speach h3{
+    font-size: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: left;
+}
+.paragraph p{
+    text-align: left;
+    color: white;
+    font-size: 0.9rem;
+}
+.form{
+    text-align: left;
+}
+.form label{
+    color: white;
+}
+.form input{
+    text-align: left;
+    padding: 10px;
+    margin: 15px;
+    border-style: none;
+    border: none;
+    border-radius: 5px;
+}
+.form textarea{
+    text-align: center;
+    text-transform: capitalize;
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.form button{
+    background-color: #f9004d;
+    border: 1px solid #191919;
+    border-radius: 10px;
+    text-transform: capitalize;
+    padding: 7px 25px;
+    margin: 5px 10px 10px 0px;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+.form button:hover{
+ background-color: transparent;
+ border: 1px solid #ffffff;
+}
+.con h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.con{
+    text-align: center;
+}
+.con-icon .btn{
+    font-size: 1.5rem;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    width: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.con-icon .btn:hover{
+    background-color: transparent;
+}
+
+.contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Contact me Ends  */
